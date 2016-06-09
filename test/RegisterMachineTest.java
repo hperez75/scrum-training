@@ -14,8 +14,8 @@ public class RegisterMachineTest {
 	@Before
 	public void setUp() {
 		// Map with the fruits and the consolidated total
-		fruits = Arrays.asList("Apples", "Bananas", "Cherries", "Cherries");
-		acummulatedTotal = Arrays.asList(100, 250, 325, 380);
+		fruits = Arrays.asList("Apples", "Cherries", "Cherries");
+		acummulatedTotal = Arrays.asList(100, 175, 230);
 	}
 	
 	/**
