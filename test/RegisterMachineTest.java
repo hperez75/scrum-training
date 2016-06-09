@@ -14,8 +14,8 @@ public class RegisterMachineTest {
 	@Before
 	public void setUp() {
 		// Map with the fruits and the consolidated total
-		fruits = Arrays.asList("Apples", "Bananas", "Cherries");
-		acummulatedTotal = Arrays.asList(100, 250, 325);
+		fruits = Arrays.asList("Apples", "Bananas", "Cherries", "Cherries");
+		acummulatedTotal = Arrays.asList(100, 250, 325, 380);
 	}
 	
 	/**
@@ -31,10 +31,10 @@ public class RegisterMachineTest {
 	}
 	
 	/**
-	 * Test done for iteration 1: test registration and addition of several fruits.
+	 * Test updated for iteration 2: test registration and addition of several fruits applying cherries discount.
 	 */
 	@Test
-	public void testPurchaseSeveralFruits() {
+	public void testPurchaseFruitsAndApplyCherriesDiscount() {
 		RegisterMachine regM = new RegisterMachine();
 		for (int i = 0; i < fruits.size(); i++) {
 			regM.execute(fruits.get(i));
